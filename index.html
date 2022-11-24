@@ -66,31 +66,37 @@
         <div class="logo">
           <a href="#intro" class="link-scroll"><img src="./assets/images/other_images/logo.png" alt="Twilli Air"></a>
         </div><!-- .logo -->
-        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
-                <div id="tr-menu" class="">
-                    <ul id="main-menu">
-                        <li id="menu-item-text" class="menu-item scroll"><a href="#biyografi">biyografi</a></li>
-                        <li id="menu-item-carousel" class="menu-item scroll"><a href="#galeri">galeri</a></li>
-                        <!-- <li id="menu-item-grid" class="menu-item scroll"><a href="#diskografi">diskografi</a></li> -->
-                        <li id="menu-item-grid" class="menu-item scroll"><a href="#filmografi">filmografi</a></li>
-                        <li id="menu-item-contact" class="menu-item scroll"><a href="#iletisim">iletişim</a></li>
-                    </ul><!-- #main-menu -->
-                </div>
-                <div id="en-menu" class="hidden">
-                    <ul id="main-menu">
-                        <li id="menu-item-text" class="menu-item scroll"><a href="#biyografi">biography</a></li>
-                        <li id="menu-item-carousel" class="menu-item scroll"><a href="#galeri">gallery</a></li>
-                        <!-- <li id="menu-item-grid" class="menu-item scroll"><a href="#diskografi">discography</a></li> -->
-                        <li id="menu-item-grid" class="menu-item scroll"><a href="#filmografi">filmography</a></li>
-                        <li id="menu-item-contact" class="menu-item scroll"><a href="#iletisim">contact</a></li>
-                    </ul><!-- #main-menu -->
-                </div>
-                <div class="language-side">
-                    <center>
-                        <a onclick="langTR()">TR</a> | 
-                        <a onclick="langEN()">EN</a>
-                    </center>
-                </div>
+
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();">
+          <span class="glyphicon glyphicon-th"></span>
+        </div>
+
+        <div id="tr-menu" class="">
+          <ul id="main-menu">
+            <li id="menu-item-text" class="menu-item scroll"><a href="#biyografi">biyografi</a></li>
+            <li id="menu-item-carousel" class="menu-item scroll"><a href="#galeri">galeri</a></li>
+            <!-- <li id="menu-item-grid" class="menu-item scroll"><a href="#diskografi">diskografi</a></li> -->
+            <li id="menu-item-grid" class="menu-item scroll"><a href="#filmografi">filmografi</a></li>
+            <li id="menu-item-contact" class="menu-item scroll"><a href="#iletisim">iletişim</a></li>
+          </ul><!-- #main-menu -->
+        </div>
+
+        <div id="en-menu" class="hidden">
+          <ul id="main-menu">
+            <li id="menu-item-text" class="menu-item scroll"><a href="#biyografi">biography</a></li>
+            <li id="menu-item-carousel" class="menu-item scroll"><a href="#galeri">gallery</a></li>
+            <!-- <li id="menu-item-grid" class="menu-item scroll"><a href="#diskografi">discography</a></li> -->
+            <li id="menu-item-grid" class="menu-item scroll"><a href="#filmografi">filmography</a></li>
+            <li id="menu-item-contact" class="menu-item scroll"><a href="#iletisim">contact</a></li>
+          </ul><!-- #main-menu -->
+        </div>
+
+        <div class="language-side">
+          <center>
+            <a onclick="langTR()">TR</a> | 
+            <a onclick="langEN()">EN</a>
+          </center>
+        </div>
       </section><!-- #left-sidebar -->
       
       <section id="main-content" class="clearfix">
@@ -170,17 +176,39 @@
         <article id="filmografi" class="section-wrapper clearfix" data-custom-background-img="./assets/images/other_images/bg4.png">
           <div class="content-wrapper clearfix">
             <div id="tr-filmografi" class="col-sm-11 col-md-10 pull-right">
-              <h1 class="section-title">filmografi</h1>
+              <h1 class="section-title">
+                <a href="https://www.imdb.com/name/nm6778346/" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/images/imdb.png" alt="IMDB" style="max-height: 40px; margin-right: 10px; border-radius: 5px;">
+                </a>
+                filmografi
+              </h1>
               <section class="grid row clearfix clearfix-for-2cols">
                 <div class="grid-item col-md-8">
+
                   <span class="icon glyphicon glyphicon-stats"></span>
                   <h5>Kurtlar Vadisi Pusu</h5>
-                  <p>11. Sezon, 12. Sezon, 13. Sezon (219 - 264)<br/>
-                  <i>Siber Güvenlik Teşkilatı Başkanı, Erdem</i> Karakteri</p>
+                  <p>
+                    11. Sezon, 12. Sezon, 13. Sezon (219 - 264)<br/>
+                    <i>Siber Güvenlik Teşkilatı Baş., Erdem</i> Karakteri
+                  </p>
+
                   <hr />
+
                   <span class="icon glyphicon glyphicon-stats"></span>
                   <h5>Arka Sokaklar</h5>
-                  <p><i>Psikolog, Altuğ İnce</i> Karakteri</p>
+                  <p>
+                    <i>Psikolog, Altuğ İnce</i> Karakteri
+                    <br/><br/>
+                  </p>
+
+                  <hr />
+
+                  <span class="icon glyphicon glyphicon-stats"></span>
+                  <h5>Pençe</h5>
+                  <p>
+                    1. Sezon<br/>
+                    <i>Asb. Kd. Bçvş, İsmail Koca</i> Karakteri
+                  </p>
                 </div><!-- end: .grid-item -->
               </section><!-- end: grid -->
             </div><!-- .col-sm-11 -->
@@ -196,6 +224,10 @@
                   <span class="icon glyphicon glyphicon-stats"></span>
                   <h5>Arka Sokaklar</h5>
                   <p><i>Psychologist, Altuğ İnce</i> Character</p>
+                  <hr />
+                  <span class="icon glyphicon glyphicon-stats"></span>
+                  <h5>Pençe</h5>
+                  <p><i>Asb. Kd. Bçvş, İsmail Koca</i> Character</p>
                 </div><!-- end: .grid-item -->
               </section><!-- end: grid -->
             </div><!-- .col-sm-11 -->
@@ -268,12 +300,13 @@
             </div><!-- end: CONTACT FORM -->
           </div><!-- .content-wrapper -->
         </article><!-- .section-wrapper -->
+
       </section><!-- #main-content -->
       
       <!-- FOOTER -->
       <section id="footer">
-                <a id="bgmOn" type="button" class="hidden" onclick="btnBGM()"><span class="icon-volume-off"></span></a>
-                <a id="bgmOff" type="button" class="" onclick="btnBGM()"><span class="icon-volume"></span></a>
+        <a id="bgmOn" type="button" class="hidden" onclick="btnBGM()"><span class="icon-volume-off"></span></a>
+        <a id="bgmOff" type="button" class="" onclick="btnBGM()"><span class="icon-volume"></span></a>
         <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
         <div style="margin-top:7px;">&copy; 2009 <a href="http://vacstudio.com" target="_blank" style="font-family:verdana;">V.A.C. Studio</a></div>
       </section>
@@ -311,26 +344,22 @@
     <![endif]-->
         <script type="text/javascript">
             function langTR() {
-                document.getElementById("tr-menu").classList.remove("hidden");
-                document.getElementById("tr-biyografi").classList.remove("hidden");
-                document.getElementById("tr-diskografi").classList.remove("hidden");
-                document.getElementById("tr-filmografi").classList.remove("hidden");
-                document.getElementById("tr-iletisim").classList.remove("hidden");
-                document.getElementById("en-menu").classList.add("hidden");
-                document.getElementById("en-biyografi").classList.add("hidden");
-                document.getElementById("en-diskografi").classList.add("hidden");
-                document.getElementById("en-filmografi").classList.add("hidden");
-                document.getElementById("en-iletisim").classList.add("hidden");
+              document.getElementById("tr-menu").classList.remove("hidden");
+              document.getElementById("tr-biyografi").classList.remove("hidden");
+              document.getElementById("tr-filmografi").classList.remove("hidden");
+              document.getElementById("tr-iletisim").classList.remove("hidden");
+              document.getElementById("en-menu").classList.add("hidden");
+              document.getElementById("en-biyografi").classList.add("hidden");
+              document.getElementById("en-filmografi").classList.add("hidden");
+              document.getElementById("en-iletisim").classList.add("hidden");
             }
             function langEN() {
                 document.getElementById("en-menu").classList.remove("hidden");
                 document.getElementById("en-biyografi").classList.remove("hidden");
-                document.getElementById("en-diskografi").classList.remove("hidden");
                 document.getElementById("en-filmografi").classList.remove("hidden");
                 document.getElementById("en-iletisim").classList.remove("hidden");
                 document.getElementById("tr-menu").classList.add("hidden");
                 document.getElementById("tr-biyografi").classList.add("hidden");
-                document.getElementById("tr-diskografi").classList.add("hidden");
                 document.getElementById("tr-filmografi").classList.add("hidden");
                 document.getElementById("tr-iletisim").classList.add("hidden");
             }
