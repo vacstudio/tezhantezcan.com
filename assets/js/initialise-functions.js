@@ -37,7 +37,7 @@ function initialise_document_ready_functions()
     // ------ Owl Carousel ------
     // Initialise Owl Carousels with common class .popup-image-gallery when popup is opened
     // - you can use the same functions below if you want to add a new Owl Carousel with different parameters (in this case call the carousel's unique ID instead)
-    // - documentation for Owl Carousel: http://www.owlgraphic.com/owlcarousel/#how-to
+    // - documentation for Owl Carousel: https://www.owlgraphic.com/owlcarousel/#how-to
     $('#common-modal').on('shown.bs.modal', function()
     {
     if ($('#common-modal .popup-image-gallery').length > 0)

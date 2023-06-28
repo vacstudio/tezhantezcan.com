@@ -8,7 +8,7 @@
     <meta name="author" content="Nevcan Uludaş">
     <title>Tezhan Tezcan | Official Website</title>
     <link rel="shortcut icon" href="./_view/img/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     
     <!-- CSS -->
     <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -280,7 +280,7 @@
             <div class="contact-details col-sm-5 col-md-3"></div>
             <div class="col-sm-7 col-md-9">
               <h5>Menajerlik</h5>
-              <a href="http://tumayozokur.com.tr" target="_blank">Tümay Özokur Menajerlik</a>
+              <a href="https://tumayozokur.com.tr" target="_blank">Tümay Özokur Menajerlik</a>
               <hr>
               <h5>Sosyal Medya</h5>
               <a href="https://www.instagram.com/tezhan_tezcan" target="_blank" title="Instagram">
@@ -297,7 +297,7 @@
             <div class="contact-details col-sm-5 col-md-3"></div>
             <div class="col-sm-7 col-md-9">
               <h5>Management</h5>
-              <a href="http://tumayozokur.com.tr" target="_blank">Tümay Özokur Menajerlik</a>
+              <a href="https://tumayozokur.com.tr" target="_blank">Tümay Özokur Menajerlik</a>
               <hr>
               <h5>Social Media</h5>
               <a href="https://www.instagram.com/tezhan_tezcan" target="_blank" title="Instagram">
@@ -317,7 +317,7 @@
         <a id="bgmOn" type="button" class="hidden" onclick="btnBGM()"><span class="icon-volume-off"></span></a>
         <a id="bgmOff" type="button" class="" onclick="btnBGM()"><span class="icon-volume"></span></a>
         <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
-        <div style="margin-top:7px;">&copy; 2009 <a href="http://vacstudio.com" target="_blank" style="font-family:verdana;">V.A.C. Studio</a></div>
+        <div style="margin-top:7px;">&copy; 2009 <a href="https://vacstudio.com" target="_blank" style="font-family:verdana;">V.A.C. Studio</a></div>
       </section>
     </div><!-- #outer-container -->
     <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -363,69 +363,71 @@
               document.getElementById("en-iletisim").classList.add("hidden");
             }
             function langEN() {
-                document.getElementById("en-menu").classList.remove("hidden");
-                document.getElementById("en-biyografi").classList.remove("hidden");
-                document.getElementById("en-filmografi").classList.remove("hidden");
-                document.getElementById("en-iletisim").classList.remove("hidden");
-                document.getElementById("tr-menu").classList.add("hidden");
-                document.getElementById("tr-biyografi").classList.add("hidden");
-                document.getElementById("tr-filmografi").classList.add("hidden");
-                document.getElementById("tr-iletisim").classList.add("hidden");
+              document.getElementById("en-menu").classList.remove("hidden");
+              document.getElementById("en-biyografi").classList.remove("hidden");
+              document.getElementById("en-filmografi").classList.remove("hidden");
+              document.getElementById("en-iletisim").classList.remove("hidden");
+              document.getElementById("tr-menu").classList.add("hidden");
+              document.getElementById("tr-biyografi").classList.add("hidden");
+              document.getElementById("tr-filmografi").classList.add("hidden");
+              document.getElementById("tr-iletisim").classList.add("hidden");
             }
             function btnBGM() {
-                if (document.getElementById("bgmOn").classList.contains("hidden")) {
-                    document.getElementById("bgmOn").classList.remove("hidden");
-                    document.getElementById("bgmOff").classList.add("hidden");
-                    document.getElementById("bgm").pause();
-                } else {
-                    document.getElementById("bgmOff").classList.remove("hidden");
-                    document.getElementById("bgmOn").classList.add("hidden");
-                    document.getElementById("bgm").play();
-                }
+              if (document.getElementById("bgmOn").classList.contains("hidden")) {
+                document.getElementById("bgmOn").classList.remove("hidden");
+                document.getElementById("bgmOff").classList.add("hidden");
+                document.getElementById("bgm").pause();
+              } else {
+                document.getElementById("bgmOff").classList.remove("hidden");
+                document.getElementById("bgmOn").classList.add("hidden");
+                document.getElementById("bgm").play();
+              }
             }
             function detectmob() { 
-                if(navigator.userAgent.match(/Android/i)
-                || navigator.userAgent.match(/webOS/i)
-                || navigator.userAgent.match(/iPhone/i)
-                || navigator.userAgent.match(/iPod/i)
-                || navigator.userAgent.match(/BlackBerry/i)
-                || navigator.userAgent.match(/Windows Phone/i)){
-                    document.getElementById("bgmOff").classList.add("hidden");
-                } else if (navigator.userAgent.match(/iPad/i)){
-                    document.getElementById("bgmOff").classList.add("hidden");
-                    document.getElementById("bgmOn").classList.remove("hidden");
-                    // <!-- fake click -->
-                    function fakeClick(fn) {
-                        var $a = $('<a href="#" id="fakeClick"></a>');
-                        $a.bind("click", function(e) {
-                            e.preventDefault();
-                            fn();
-                        });
-                        $("body").append($a);
-                        var evt, 
-                        el = $("#fakeClick").get(0);
-                        if (document.createEvent) {
-                            evt = document.createEvent("MouseEvents");
-                            if (evt.initMouseEvent) {
-                                evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-                                el.dispatchEvent(evt);
-                            }
-                        }
-                        $(el).remove();
+              if(navigator.userAgent.match(/Android/i)
+              || navigator.userAgent.match(/webOS/i)
+              || navigator.userAgent.match(/iPhone/i)
+              || navigator.userAgent.match(/iPod/i)
+              || navigator.userAgent.match(/BlackBerry/i)
+              || navigator.userAgent.match(/Windows Phone/i)){
+                document.getElementById("bgmOff").classList.add("hidden");
+              } else if (navigator.userAgent.match(/iPad/i)){
+                document.getElementById("bgmOff").classList.add("hidden");
+                document.getElementById("bgmOn").classList.remove("hidden");
+                // <!-- fake click -->
+                function fakeClick(fn) {
+                  var $a = $('<a href="#" id="fakeClick"></a>');
+                  $a.bind("click", function(e) {
+                    e.preventDefault();
+                    fn();
+                  });
+                  $("body").append($a);
+                  var evt, 
+                  el = $("#fakeClick").get(0);
+                  if (document.createEvent) {
+                    evt = document.createEvent("MouseEvents");
+                    if (evt.initMouseEvent) {
+                      evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                      el.dispatchEvent(evt);
                     }
-                    $(function() {
-                        fakeClick(function() {
-                            document.getElementById("bgm").play();
-                        });
-                    });
-                    // <!-- #fake click -->
-                } else {
-                    document.getElementById("bgm").play();
+                  }
+                  $(el).remove();
                 }
+                $(function() {
+                  fakeClick(function() {
+                    document.getElementById("bgm").play();
+                  });
+                });
+                // <!-- #fake click -->
+              } else {
+                document.getElementById("bgm").play();
+              }
             }
         </script>
-        <audio id="bgm" loop> <!-- autoplay loop -->
-            <source src="bgm.mp3" type="audio/mpeg" />
-        </audio>
+
+    <audio id="bgm" loop> <!-- autoplay loop -->
+      <source src="bgm.mp3" type="audio/mpeg" />
+    </audio>
+
   </body>
 </html>
